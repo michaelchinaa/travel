@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Travel Survey · For Her</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card" id="appContainer">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <h1>🌸 Travel Survey <small>for my gf</small></h1>
+            <span class="badge">✨ Fun</span>
+        </div>
+        <div class="subhead">
+            <span id="progressText">Loading...</span>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <div id="surveyContainer">
+            <div style="text-align: center; padding: 2rem;">
+                <div class="loader"></div>
+                <p>Loading survey...</p>
+            </div>
+        </div>
+
+        <div id="resultArea" class="hidden">
+            <div class="result-summary" id="resultSummary"></div>
+            <div class="flex-row">
+                <button class="btn-secondary" id="resetBtn">🔄 Start Over</button>
+            </div>
+        </div>
+
+        <div class="footnote">💌 Every choice leads to a surprise · results at the end</div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
