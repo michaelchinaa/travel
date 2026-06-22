@@ -32,3 +32,5 @@ build/
 
 # Uploads
 uploads/
+.vercel
+.env*
